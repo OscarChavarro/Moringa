@@ -91,12 +91,10 @@ textarea { resize: none; }
 
 body { font: 16px/26px font-family: 'Montserrat', sans-serif; background-color: #F9F4D0;}
 .header{width: 100%;}
-
-.menu-main{align-items: stretch; width: 100%;height: 0;}
+.menu-main{align-items: stretch; width: 100%;}
 .menu-main{margin: auto;}
 .menu-main li{background-color: transparent;font-weight: 700;width: 100%; text-align: center;}
 .menu-main li:hover{background-color: #336633; }
-.btn-activa-menu{text-align: right;}
 
 .logo{width: 50%; margin: auto; max-width: 250px; min-width: 200px;}
 
@@ -129,8 +127,6 @@ body { font: 16px/26px font-family: 'Montserrat', sans-serif; background-color: 
 
 
 @media only screen and (min-width: 768px) {
-
-.btn-activa-menu{display: none; visibility: none; height: 0; width: 0;}
 .menu-main li{width:auto;}
 .menu-main{width: 95%;}
 
