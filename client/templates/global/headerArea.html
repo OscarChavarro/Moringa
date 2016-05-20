@@ -1,72 +1,22 @@
 <template name="headerArea">
-    <!-- Define todos los diálogos modales desde el principio para evitar bloqueos -->
-
-    <!-- Fin de la definición de diálogos modales -->
-    <div class="container-fluid cabecera-fijada" id="headerArea">
-        <div class="row  p">
-            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-2 logo text-align-center p">
-             <!--............... LOGO-->
-                <div class="cont-logo">
-                    <a class="inicio" id="headerMenuBarLogoLink" href="/">
-                         <img src={{resourceUrl "/images/logo.svg"}} alt="LogoMoringa" style="margin:auto; max-width:250px; display:block;">
-                    </a>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-9  col-lg-10 p">
-             <!-- ....telefonos.. -->
-
-                <nav class="col-xs-12 p">
-                    <div class="col-xs-12 p">
-                        <div class="col-xs-12 menu p">
-                            <div class="col-xs-4 col-lg-3 col-lg-offset-3 btn-menu"><a href="/products">PRODUCTOS</a></div>
-                            <div class="col-xs-4 col-lg-3 btn-menu btn-lineas"><a href="/faq">PREGUNTAS FRECUENTES</a></div>
-                            <div class="col-xs-4 col-lg-3 btn-menu"><a href="/contact">CONTÁCTENOS</a></div>
-                            <div class="col-xs-12 sesion-buscar p">
-                                <div class="col-xs-12 col-sm-6 sesion"><!-- ............... SESION.. -->
-                                    <div class="cont-usuario">
-                                          {{#if globalIsUserLoggedIn}}
-                                          <p class="usuario" >Bienvenido(a) {{globalGetCurrentLoggedUsername}}</p>
-                                          {{#if globalCheckUserRole "SYSTEM_ADMINISTRATOR"}}
-                                          <a href="/adminPanel">Administrar</a>
-                                          {{/if}}
-                                          <a href="#" id="logoutUser" class="cs">Cerrar sesión</a>
-                                          {{else}}
-                                          <a href="#" id="registerNewUser" data-toggle="dropdown" class="registrarse">Regístrate</a>
-                                          {{> loginDropDownMenuItem}} {{/if}}
-                                    </div>
-                                </div>
-                                <div class="col-xs-12 col-sm-6 buscar p">
-                                    <form action="/search" class="col-xs-12 p" role="form">
-                                        <div class="col-xs-12 buscar-campo p">
-                                            <input class="col-xs-10" type="text" name="name" id="name" placeholder="Ingrese el nombre del producto">
-                                            <button class="col-xs-1  btn-buscar p" type="submit"><span class="glyphicon glyphicon-search"></span></button>
-                                            <a href="/search" class="col-xs-1  btn-buscar p"><span class="glyphicon glyphicon-wrench"></span></a>
-                                         </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-
-        </div>
-    </div>
+  <div class="header-container">
+      <header class="wrapper clearfix">
+          <div class="logo p15">
+              <img src="../img/logo.svg" class="imgR p15" alt="">
+          </div>
+          <nav class="bg2">
+              <ul class="f01 menu-main">
+                  <li><a class="btn p10 w100" href="#">Productos</a></li>
+                  <li><a class="btn p10 w100" href="#">Conócenos</a></li>
+                  <li><a class="btn p10 w100" href="#">Artículos</a></li>
+                  <li><a class="btn p10 w100" href="#">Usos</a></li>
+                  <li><a class="btn p10 w100" href="#">Legal</a></li>
+                  <li><a class="btn p10 w100" href="#">Donde Comprar</a></li>
+              </ul>
+          </nav>
+      </header>
+  </div>
 </template>
 
-<!--
-Plantilla privada
--->
 <template name="loginDropDownMenuItem">
-    <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" role="button">
-            Ingresar
-            <span class="caret"></span>
-        </a>
-        <ul id="loginPopup" class="dropdown-menu" role="menu">
-            <li class="loginPopupItem">
-                Aca debe ir el USER LOGIN BOX
-            </li>
-        </ul>
-    </li>
 </template>
