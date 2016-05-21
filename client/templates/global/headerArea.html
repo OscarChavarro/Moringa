@@ -1,23 +1,81 @@
 <template name="headerArea">
-  <div class="header-container">
-      <header class="wrapper clearfix">
-          <div class="logo p15">
-              <img src="img/logo.svg" class="imgR p15" alt="">
-          </div>
-          <nav class="bg2">
-            <div class="p10 btn-activa-menu"><i class="fa fa-bars" aria-hidden="true"></i></div>
-              <ul class="f01 menu-main">
-                  <li><a class="btn p10 w100" href="#">Productos</a></li>
-                  <li><a class="btn p10 w100" href="#">Conócenos</a></li>
-                  <li><a class="btn p10 w100" href="#">Artículos</a></li>
-                  <li><a class="btn p10 w100" href="#">Usos</a></li>
-                  <li><a class="btn p10 w100" href="#">Legal</a></li>
-                  <li><a class="btn p10 w100" href="#">Donde Comprar</a></li>
-              </ul>
-          </nav>
-      </header>
+  <div class="logo p15">
+      <img src="img/logo.svg" class="imgR p15" alt="">
   </div>
-</template>
+  <nav class="bg2 p15">
+    <!-- Boton para menu en teléfonos -->
+    <div class="p10 btn-activa-menu p15">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
 
+    <!-- Aquí comienza el menú -->
+      <ul class="f01 menu-main">
+          <li><a href="" class="btn p10">Quienes Somos</a></li>
+          <li>
+            <a class="btn p10 w100" href="#">Productos <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+            <ul class=" submenu">
+              <li>Hojas Enteras de Moringa: Presentación Bolsa</li>
+              <li>Hojas Enteras de Moringa: Presentación Frasco Mediano</li>
+              <li>Hojas Tritutaradas de Moringa: Presentación Bolsa</li>
+              <li>Hojas Trituradas de Moringa: Presentación Bolsa</li>
+              <li>Hojas Trituradas de Moringa: Presentación Frasco Mediano</li>
+              <li>Hojas Trituratas de Moringa: Presentación Tisana</li>
+              <li>Hoja Pulverizada de Moringa: Presentación Bolsa</li>
+              <li>Hoja Pulverizada de Moringa: Presentación Frasco Pequeño</li>
+              <li>Hoja Pulverizada de Moringa: Presentación Frasco Mediano</li>
+              <li>Hoja Pulverizada de Moringa: Presentación Capsula Pura,Fórmula magistral</li>
+            </ul>
+          </li>
+          <li>
+            <a class="btn p10 w100" href="#">Róles Intereses Personales <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+            <ul class="submenu">
+              <li>Consumidor</li>
+              <li>Distribuidor en Colombia (Implica Registro)</li>
+              <li>Importador / Distribuidor en otros Paises</li>
+              <li>Médicos / Visitadores Médicos (Implica registro)</li>
+              <li>Interno Mercadeo</li>
+            </ul>
+          </li>
+          <li>
+            <a class="btn p10 w100" href="#">Legales <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+            <ul class="submenu">
+              <li>Registro Sanitario</li>
+              <li>Registro de Código de Barras</li>
+              <li>Certificado de Existencia y Representación Legal de Cámara de Comercio</li>
+              <li>Restricciones legales Relacionadas con Medicamentos, Sumplementos Dietarios y Fórmula magistral</li>
+            </ul>
+          </li>
+          <li>
+            <a class="btn p10 w100" href="#">Usos <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+            <ul class="submenu">
+              <li>Tratamiento de Moringa ara Diabéticos</li>
+              <li>Tratamiento de Moringa para Adelgazar</li>
+              <li>Tratamiento de Moringa para Subir de Peso</li>
+              <li>Moringa como Estimulante</li>
+            </ul>
+          </li>
+          <li>
+            <a class="btn p10 w100" href="#">Red de Distribución <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+            <ul class="submenu">
+              <li>Directo Carrito de Compras  y pagos en linea</li>
+              <li>¿En qué Lugares puedo Comprar?</li>
+            </ul>
+          </li>
+          <li>
+            <a class="btn p10 w100" href="#">Académico <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+            <ul class="submenu">
+              <li>Artículos científicos</li>
+              <li>Resultados de análisis de Laboratorio
+                  <ul>
+                    <li>Bromatología y aminograma</li>
+                    <li>Tabla de Información nutricional</li>
+                  </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="" class="p10 btn">Preguntas Frecuentes</a></li>
+      </ul>
+  </nav>
+</template>
 <template name="loginDropDownMenuItem">
 </template>

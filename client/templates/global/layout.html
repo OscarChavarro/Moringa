@@ -1,19 +1,19 @@
 <template name="layout">
-    <div class="f02">
-        <div class="header">
+    <div class="">
+        <div class=" p15">
             {{> headerArea}}
         </div>
-        <div id="centralArea" class="f01 contenedor-main ro">
-            <div class="espacio ro"></div>
+        <div id="centralArea" class="f01 contenedor-main">
             <div id="contentArea" class="contenedor" style="width:100%;">
 
                 <!-- yield template is managed by iron route manager.
                     From current route, content is selected (check route.js table) -->
-                <div class="contenido">
+                <div class="contenido mvh6">
                     {{> yield}}
                 </div>
+
                 <!-- end of iron router managed yield template -->
-                <div class="footer">
+                <div class="">
                     {{> footerArea}}
                 </div>
             </div>
