@@ -1,82 +1,91 @@
 <template name="headerArea">
-  <div class="header">
-  <div class="logo p15">
-      <img src="img/logo.svg" class="imgR p15" alt="">
-  </div>
-  <nav class="bg2 p15">
-    <!-- Boton para menu en teléfonos -->
-    <div class="p10 btn-activa-menu p15">
-      <i class="fa fa-bars" aria-hidden="true"></i>
+  <div class="cabeza f01 ">
+    <div class="logo ">
+        <img src="img/logob.svg" class="imgR" alt="">
     </div>
+    <nav class="">
+      <!-- Boton para menu en teléfonos -->
+      <div class="btn-activa-menu p5 w100">
+        <h1 class="sinp cb"><i class="fa fa-bars" aria-hidden="true"></i></h1>
+      </div>
 
-    <!-- Aquí comienza el menú -->
-      <ul class="f01 menu-main">
-          <li><a href="" class="btn p10">Quienes Somos</a></li>
-          <li>
-            <a class="btn p10 w100" href="#">Productos <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
-            <ul class=" submenu">
-              <li>Hojas Enteras de Moringa: Presentación Bolsa</li>
-              <li>Hojas Enteras de Moringa: Presentación Frasco Mediano</li>
-              <li>Hojas Tritutaradas de Moringa: Presentación Bolsa</li>
-              <li>Hojas Trituradas de Moringa: Presentación Bolsa</li>
-              <li>Hojas Trituradas de Moringa: Presentación Frasco Mediano</li>
-              <li>Hojas Trituratas de Moringa: Presentación Tisana</li>
-              <li>Hoja Pulverizada de Moringa: Presentación Bolsa</li>
-              <li>Hoja Pulverizada de Moringa: Presentación Frasco Pequeño</li>
-              <li>Hoja Pulverizada de Moringa: Presentación Frasco Mediano</li>
-              <li>Hoja Pulverizada de Moringa: Presentación Capsula Pura,Fórmula magistral</li>
-            </ul>
-          </li>
-          <li>
-            <a class="btn p10 w100" href="#">Róles Intereses Personales <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
-            <ul class="submenu">
-              <li>Consumidor</li>
-              <li>Distribuidor en Colombia (Implica Registro)</li>
-              <li>Importador / Distribuidor en otros Paises</li>
-              <li>Médicos / Visitadores Médicos (Implica registro)</li>
-              <li>Interno Mercadeo</li>
-            </ul>
-          </li>
-          <li>
-            <a class="btn p10 w100" href="#">Legales <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
-            <ul class="submenu">
-              <li>Registro Sanitario</li>
-              <li>Registro de Código de Barras</li>
-              <li>Certificado de Existencia y Representación Legal de Cámara de Comercio</li>
-              <li>Restricciones legales Relacionadas con Medicamentos, Sumplementos Dietarios y Fórmula magistral</li>
-            </ul>
-          </li>
-          <li>
-            <a class="btn p10 w100" href="#">Usos <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
-            <ul class="submenu">
-              <li>Tratamiento de Moringa ara Diabéticos</li>
-              <li>Tratamiento de Moringa para Adelgazar</li>
-              <li>Tratamiento de Moringa para Subir de Peso</li>
-              <li>Moringa como Estimulante</li>
-            </ul>
-          </li>
-          <li>
-            <a class="btn p10 w100" href="#">Red de Distribución <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
-            <ul class="submenu">
-              <li>Directo Carrito de Compras  y pagos en linea</li>
-              <li>¿En qué Lugares puedo Comprar?</li>
-            </ul>
-          </li>
-          <li>
-            <a class="btn p10 w100" href="#">Académico <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
-            <ul class="submenu">
-              <li>Artículos científicos</li>
-              <li>Resultados de análisis de Laboratorio
-                  <ul>
-                    <li>Bromatología y aminograma</li>
-                    <li>Tabla de Información nutricional</li>
-                  </ul>
-              </li>
-            </ul>
-          </li>
-          <li><a href="" class="p10 btn">Preguntas Frecuentes</a></li>
-      </ul>
-  </nav>
+      <!-- Aquí comienza el menú -->
+        <ul class="f01 menu-main">
+            <li>
+              <a class="cb p5 w100" href="/productos">Productos <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+              <ul class=" submenu tr2">
+                <li class="p5 subI">Hojas en Bolsa</li>
+                <li class="p5 subI">Hojas en Frasco</li>
+                <li class="p5 subI">Hojas Trituradas en Bolsa</li>
+                <li class="p5 subI">Hojas Trituradas Frasco</li>
+                <li class="p5 subI">Hojas Trituratas en Tisana</li>
+                <li class="p5 subI">Hoja Pulverizada en Bolsa</li>
+                <li class="p5 subI">Hoja Pulverizada en Frasco Pequeño</li>
+                <li class="p5 subI">Hoja Pulverizada en Frasco Mediano</li>
+                <li class="p5 subI">Hoja Pulverizada en Capsula Pura,Fórmula magistral</li>
+              </ul>
+            </li>
+            <li>
+              <!-- <a class="cb p5 w100" href="#">Róles Intereses Personales <i class="fa fa-chevron-down" aria-hidden="true"></i></a> -->
+              <a href="" class="cb p1">Conócenos</a>
+              <ul class=" tr2">
+                <!-- <li>Consumidor</li>
+                <li>Distribuidor en Colombia (Implica Registro)</li>
+                <li>Importador / Distribuidor en otros Paises</li>
+                <li>Médicos / Visitadores Médicos (Implica registro)</li>
+                <li>Interno Mercadeo</li> -->
+              </ul>
+            </li>
+            <li><a href="" class="cb p1">Artículos</a></li>
+            <li>
+              <a class="cb p5 w100" href="#">Usos <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+              <ul class="submenu tr2">
+                <li class="p5 subI">Tratamiento  para Diabéticos</li>
+                <li class="p5 subI">Tratamiento  para Adelgazar</li>
+                <li class="p5 subI">Tratamiento  para Subir de Peso</li>
+                <li class="p5 subI">Moringa como Estimulante</li>
+              </ul>
+            </li>
+            <li>
+              <a class="cb p5 w100" href="#">Legales <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+              <ul class="submenu tr2">
+                <li class="p5 subI">Registro Sanitario</li>
+                <li class="p5 subI">Código de Barras</li>
+                <li class="p5 subI">Certificado de Existencia y Representación Legal de Cámara de Comercio</li>
+                <li class="p5 subI">Restricciones legales </li>
+              </ul>
+            </li>
+            <li>
+              <a href="" class="cb p1">¿Donde comprar?</a>
+              <!-- <a class="cb p5 w100" href="#">Red de Distribución <i class="fa fa-chevron-down" aria-hidden="true"></i></a>-->
+              <ul class="submenu tr2">
+                <li class="p5 subI">Directo Carrito de Compras  y pagos en linea</li>
+                <li class="p5 subI">¿En qué Lugares puedo Comprar?</li>
+              </ul>
+            </li>
+            <!-- <li> -->
+              <!-- <a class="cb p5 w100" href="#">Académico <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+              <ul class="submenu tr2">
+                <li>Artículos científicos</li>
+                <li>Resultados de análisis de Laboratorio
+                    <ul>
+                      <li>Bromatología y aminograma</li>
+                      <li>Tabla de Información nutricional</li>
+                    </ul> -->
+                <!-- </li>
+              </ul>
+            </li>
+            <li><a href="" class="p5 btn">Preguntas Frecuentes</a></li> -->
+        </ul>
+    </nav>
+    <div class="p5 f01 sesion">
+      <div class="p5">
+        <p class="cb p5">Iniciar Sesión</p>
+      </div>
+      <div class="p5">
+        <p class="cb p5 rg">Registrarse</p>
+      </div>
+    </div>
   </div>
 </template>
 <template name="loginDropDownMenuItem">

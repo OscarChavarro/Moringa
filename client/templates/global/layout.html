@@ -1,11 +1,11 @@
 <template name="layout">
     <div class="">
-        <div class="">
+        <div class="cabecera-fija tr">
             {{> headerArea}}
         </div>
         <div id="centralArea" class="f01 contenedor-main">
-            <div id="contentArea" class="contenedor " style="width:100%; min-height:60vh">
-
+            <div id="contentArea" class="contenedor w100">
+                {{mifuncion}}
                 <!-- yield template is managed by iron route manager.
                     From current route, content is selected (check route.js table) -->
                 <div class="contenido">
