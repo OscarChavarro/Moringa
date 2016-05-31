@@ -138,11 +138,16 @@ textarea { resize: none; }
     .circulo-sec-03{width: 90%;}
     .cont-foto-circulo{width: 100%; overflow: hidden; border-radius: 50%; border: 20px solid #F3F7FF;}
 
-    .sec-05{background-image: url('../img/ale.jpg'); min-height: 100vh; background-attachment: fixed;}
+    .sec-05{background-image: url('../img/ale.jpg'); min-height: 100vh; background-attachment: fixed;position: relative;}
+    .titu-sec-05{position: relative;top: 100px;}
+    .linea-frascos{align-items: flex-end;width: 90%;margin: auto;position: absolute; bottom: 0; left: 5%;}
+    .fra{flex: 1;}
+
+
     .sec-04{min-height: 100vh;}
 
-    .sec-06{background-image: url('../img/Mapa.svg'); min-height: 100vh;}
-
+    .sec-06{position: relative;background-image: url('../img/Mapa.svg'); min-height: 100vh;}
+    .frasco-f{width: 50%; max-width: 350px;position: absolute; bottom: 0; right: 20px;}
     /*======Estilos del footer===============*/
     .cont-footer{position: relative; z-index: 10;}
     .suscribete{background-attachment: fixed;background-image: url('../img/foto01.png'); position:relative;}
@@ -213,6 +218,8 @@ textarea { resize: none; }
     .circulos-sec-03{justify-content: space-around;}
     .circulo-sec-03{width: 28%; margin:20px; max-width: 350px;}
 
+
+    .frasco-f{right: 80px;}
     }
 
     @media only screen and (min-width: 1140px) {
