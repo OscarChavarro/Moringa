@@ -20,5 +20,8 @@ Template.layout.onRendered(function(){
             $('.logo img').removeClass('mas-fino-img');
         }
     });
+    $('.btn-activa-menu').click(function(){
+        $('.menu-main').toggleClass('oc-menu');
+    });
     console.log("Esto se ejecuta tan pronto se muestra la plantilla");
 });

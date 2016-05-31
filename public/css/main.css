@@ -113,16 +113,19 @@ textarea { resize: none; }
     .cabecera-fija{position: fixed; top: 0; left: 0; width: 100%;z-index: 999;}
     .cabeza{width: 100%; position: relative;}
     nav{order: 4; width: 100%;}
-    .menu-main{align-items: stretch; width: 100%;}
-    .menu-main>li{background-color: transparent;font-weight: 700;width: 100%; text-align: center; position: relative;}
+
+    .menu-main{transform-origin: right top;transform: scale(1);align-items: stretch; width: 100%; background-color: rgba(0, 0, 0, 0.2); height: auto; overflow: hidden;}
+    .menu-main>li{height: 40px; padding: 10px;background-color: transparent;font-weight: 700;width: 100%; text-align: center; position: relative;}
     .submenu{height: 0;background-color: rgba(0, 0, 0, 0.5);transform-origin: left top; transform: scale(.2); opacity: 0; color:white; padding: 10px; text-align: left;}
-    .menu-main>li:hover{background-color: rgba(0, 0, 0, 0.5);}
+    .menu-main>li:hover{height: auto;background-color: rgba(0, 0, 0, 0.5);}
     .menu-main>li:hover .submenu{height: auto;transform: scale(1);opacity: 1;}
     .subI{ font-size: .95em; font-weight: 300; cursor: pointer;border-bottom: 1px dotted white;}
     .subI:hover{background-color:  #625926;}
     .logo{width: 50%; max-width: 250px;}
 
+    .oc-menu{transform: scale(0);}
 
+     .btn-activa-menu{cursor: pointer; padding: 10px; background-color: rgba(0, 0, 0, 0.5);}
     .rg{border: 1px solid white; border-radius: 4px; cursor:pointer;}
     .rg:hover{background-color: rgba(0, 0, 0, 0.5);}
 
@@ -198,13 +201,13 @@ textarea { resize: none; }
 
 }
     @media only screen and (min-width: 768px) {
-
-    .menu-main>li{width:auto;}
+    .menu-main{}
+    .menu-main>li{width:auto; padding: 0;height: auto;}
     .menu-main>li>a{width:auto;padding: 15px;flex:1;}
-    .menu-main{width: 100%;}
+    .menu-main{width: 100%; height: auto;overflow: visible;background-color: rgba(255, 0, 0, 0);}
     .submenu{position:absolute; top: 100%; left: 0; width: 300px; height: auto;}
     .btn-activa-menu{display: none;}
-
+    .oc-menu{transform:scale(1);}
     .footer-c{width: 33.3333%;}
     .fc01{align-items: flex-start;}
     .fc03{text-align: right;}
