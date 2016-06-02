@@ -11,8 +11,26 @@ Template.layout.helpers({
 
 Template.layout.onRendered(function(){
     $(window).scroll(function(){
-        var vscroll= $(this).scrollTop();
-        if(vscroll>$(window).height()){
+        if (window.location.pathname==="/") {
+            var vscroll= $(this).scrollTop();
+            if(vscroll>$(window).height()){
+                $('.cabecera-fija').addClass('mas-fino');
+                $('.logo img').addClass('mas-fino-img');
+            }else{
+                $('.cabecera-fija').removeClass('mas-fino');
+                $('.logo img').removeClass('mas-fino-img');
+            }
+        }
+
+    });
+
+    $('.btn-activa-menu').click(function(){
+        $('.menu-main').toggleClass('oc-menu');
+    });
+
+    $(window).on('click', function(){
+
+        if(window.location.pathname!=="/"){
             $('.cabecera-fija').addClass('mas-fino');
             $('.logo img').addClass('mas-fino-img');
         }else{
@@ -20,8 +38,6 @@ Template.layout.onRendered(function(){
             $('.logo img').removeClass('mas-fino-img');
         }
     });
-    $('.btn-activa-menu').click(function(){
-        $('.menu-main').toggleClass('oc-menu');
-    });
+
     console.log("Esto se ejecuta tan pronto se muestra la plantilla");
 });
