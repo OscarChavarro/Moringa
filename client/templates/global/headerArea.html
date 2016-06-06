@@ -1,7 +1,7 @@
 <template name="headerArea">
   <div class="cabeza f01 ">
     <div class="logo ">
-      <a class="tr2 logoN " href="/"> <img src="img/logob.svg" class="imgR " alt=""></a> 
+      <a class="tr2 logoN " href="/"> <img src="img/logob.svg" class="imgR " alt=""></a>
       <a class="tr2 logomf p5 oculta-logo-fino" href="/"> <img src="img/logomf.svg"  alt=""></a>
     </div>
     <nav class="">
@@ -82,11 +82,49 @@
       <div class="p5">
         <p class="cb p5">Iniciar sesión</p>
       </div>
-      <div class="p5">
+      <div class="p5 registrar">
         <p class="cb p5 rg">Registrarse</p>
       </div>
     </div>
   </div>
-</template>
-<template name="loginDropDownMenuItem">
-</template>
+
+  <!-- ======================================
+        Aquí comienza el modal de registro
+      ======================================-->
+      <div class="cont-modal-sombra f02 bg7 ">
+        <div class="cierra-modal">
+          <h1 class="sinm sinp"><i class="fa fa-times-circle-o" aria-hidden="true"></i></h1>
+        </div>
+        <div class="f01 p15 cont-modal ">
+          <div class="texto-modal f02 p15">
+            <h1 class="cb sinm sinp mb10">¡No pierda tiempo!</h1>
+              <h3 class="cb sinm sinp">Registrese y obtenga los mejores beneficios como todo un cliente VIP</h3>
+              <ul class="p15">
+              <li class="p10 cb"><i class="fa fa-check" aria-hidden="true"></i> Registrese y obtenga los mejores beneficios como todo un cliente VIP</li>
+              <li class="p10 cb"><i class="fa fa-check" aria-hidden="true"></i> Realice compras en línea sin inconvenientes cada vez que usted lo necesite</li>
+              <li class="p10 cb"><i class="fa fa-check" aria-hidden="true"></i> Reciba por correo información sobre nuestros productos</li>
+              <li class="p10 cb"><i class="fa fa-check" aria-hidden="true"></i> Sea el primero en todo.</li>
+            </ul>
+          </div>
+          <div class="modal bgw p10">
+            <div class="f01" style="justify-content:flex-end; ">
+              <p class="txtr db p10">¿ya estas registrado? </p><a href="" class="p10"> accede aquí</a>
+              </div>
+            <h2 class="bordv sinp sinm w100 txtc mb10 c1">Registrese</h2>
+            <form action="" class="f01">
+              <div class="p10 mb10">
+                <input type="text" class="mi-inp inp-r tr2" placeholder="Nombre">
+                <input type="text" class="mi-inp inp-r tr2" placeholder="Apellido">
+                <input type="text" class="mi-inp inp-r tr2" placeholder="Correo">
+                <input type="text" class="mi-inp inp-r tr2" placeholder="Contraseña">
+              </div>
+
+              <button type="submit" class="p10 btn mb10"> Registar</button>
+
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+  </template>

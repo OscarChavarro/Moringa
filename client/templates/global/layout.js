@@ -42,8 +42,20 @@ Template.layout.onRendered(function(){
             $('.logoN').removeClass('oculta-logo-normal');
 
         }
-           
+
     });
+    $('.cierra-modal').click(function(){
+        $('.cont-modal').addClass('cerrar');
+            setTimeout(function(){
+                $('.cont-modal-sombra').addClass('cerrar');
+            },400);
+    });
+    $('.registrar').click(function(){
+        $('.cont-modal-sombra').removeClass('cerrar');
+            setTimeout(function(){
+                $('.cont-modal').removeClass('cerrar');
+            },300);
+    })
 
     console.log("Esto se ejecuta tan pronto se muestra la plantilla");
 });
