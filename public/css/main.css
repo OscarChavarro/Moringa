@@ -101,6 +101,7 @@
     .c4 {color:#877a34;}
     .cb{color: white;}
     .c5{color: rgba(27,86,48,1);}
+    .c6{color:#E7E0B4; }
 
     .btn{background-color: #E7E0B4; color:#8A7A27;transition: all 500ms cubic-bezier(0.215, 0.610, 0.355, 1.000); transform:scale(1);}
     .btn:hover{
@@ -222,11 +223,27 @@
     .cont-modal-sombra{transition: all 800ms cubic-bezier(1.000, 0.000, 0.000, 1.000); transform-origin: right top; transform: scale(1); height: 100vh;  position: fixed; z-index: 99999; top: 0; left: 0; width:100vw; }
     .inp-r{width: 100%;}
     .modal{border-radius: 5px; box-shadow: 0 1px 4px #042304;}
-    .cont-modal{transition: all 800ms cubic-bezier(1.000, 0.000, 0.000, 1.000); transform-origin: left top;transform: scale(1); background-color: rgba(4, 35, 4, 0.9);border-radius: 5px;max-width: 900px;box-shadow: 0 3px 12px #042304;}
+    .cont-modal{transition: all 800ms cubic-bezier(1.000, 0.000, 0.000, 1.000); transform-origin: left top;transform: scale(1); background-color: rgba(4, 35, 4, 0.9);border-radius: 5px;max-width: 900px;box-shadow: 0 3px 12px #042304;  width: 90%; max-height: 90%; overflow: hidden; overflow-y: auto;}
     .texto-modal,.modal{width: 100%;}
-    .cierra-modal{color:white; position: absolute;right: 30px; top:10px; cursor: pointer;}
-    .cerrar{transform: scale(0);}
+    .cierra-modal{color:white; position: absolute;right: 30px; top:10px; cursor: pointer;z-index: 999;}
 
+
+    /*=========================================
+    Estilos sesion ..................
+    ==========================================*/
+    .cont-resgistro-sesion {position: relative; min-width: 300px; min-height: 500px;}
+    .cont-sesion-a{transform-origin: right top; transition: all 500ms cubic-bezier(0.215, 0.610, 0.355, 1.000);  position: absolute; top: 0px; left:0;transform:scale(1) ; height: 100%; width: 100%;}
+    .cont-sesion-aa{box-shadow: 0 3px 12px #042304; border-radius: 5px; width: 90%; max-width: 450px; background-color: rgba(4, 35, 4, 0.9); }
+    .sesionC{width: 100%;}
+    .sesionC>img{ width: 25%; margin: 5px;}
+    .sesionC>p{border-bottom: 1px solid white; width: 100%; margin-bottom: 10px;}
+    .inp-sesion{padding: 5px; border-radius: 4px;  width: 95%;}
+    .btn-entrar-sesion{width: 60%; margin-top: 10px;}
+    .sesionB{cursor: pointer;}
+    .sesionB:hover{color: #E7E0B4;}
+
+
+    .cerrar{transform: scale(0) ;}
     /*=========================================
     Estilos Carrito ..................
     ==========================================*/

@@ -44,18 +44,49 @@ Template.layout.onRendered(function(){
         }
 
     });
+    var sesion= true;
+    var registro= true;
+
     $('.cierra-modal').click(function(){
-        $('.cont-modal').addClass('cerrar');
-            setTimeout(function(){
-                $('.cont-modal-sombra').addClass('cerrar');
-            },400);
+        if(sesion){
+            $('.cont-sesion-a').addClass("cerrar");
+
+                setTimeout(function(){
+                    $('.cont-modal-sombra').addClass('cerrar');
+                },400);
+            sesion= false;
+        }
+        if(registro){
+            $('.cont-modal').addClass("cerrar");
+                setTimeout(function(){
+                    $('.cont-modal-sombra').addClass('cerrar');
+                },400);
+                registro= false;
+        }
     });
-    $('.registrar').click(function(){
-        $('.cont-modal-sombra').removeClass('cerrar');
+    $('.sesionB').click(function(){
+        $('.cont-modal-sombra').removeClass("cerrar");
+            setTimeout(function(){
+                $('.cont-sesion-a').removeClass('cerrar');
+            },400);
+            sesion= true;
+    })
+    $('.registrarA').click(function(){
+        $('.cont-modal-sombra').removeClass("cerrar");
             setTimeout(function(){
                 $('.cont-modal').removeClass('cerrar');
-            },300);
+            },400);
+            registro= true;
     })
+    $('.acceda').click(function(){
+        setTimeout(function(){
+        $('.cont-modal').addClass('cerrar');
+        registro=false;
+            $('.cont-sesion-a').removeClass('cerrar');
+        },400);
+        sesion= true;
+    });
+
 
     console.log("Esto se ejecuta tan pronto se muestra la plantilla");
 });
