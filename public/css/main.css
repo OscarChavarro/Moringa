@@ -164,7 +164,7 @@
     .video{ width: 100%;height: 100vh;position:relative;}
     .sec-02{height: 100vh;}
     .titu-m>h1{font-size: 2em;margin: 0; padding:0; font-weight: 700;}
-    .titu-m>h2{font-size: 1.5em;margin: 0; padding:0;font-weight: 300; transform: translateX(25%); display: block; width: 55%;}
+    .titu-m>h2{font-size: 1em;margin: 0; padding:0;font-weight: 300; transform: translateX(5%); display: block; width:auto;}
 
     .sec-02{background-image: url('../img/taza.jpg');background-size: 50% auto;background-position: right center; background-color: white;}
     .foto-sec-3{background-image: url('../img/vive.jpg');background-attachment: fixed;min-height: 50vh; justify-content: flex-end;}
@@ -286,9 +286,9 @@
     .cabeza{ justify-content: space-between; }
     .logo{max-width: 200px;}
 
-    .titu-m{width: 60%;align-self: flex-start;}
+    .titu-m{width: 80%;align-self: flex-start;}
     .titu-m>h1{font-size: 2.5em;}
-    .titu-m>h2{font-size: 2em;}
+    .titu-m>h2{font-size: 1.1em; line-height: 1.1em;}
 
     .tnio{font-size: 2.5em;}
     .tnio2{font-size: 2em;}
@@ -308,8 +308,9 @@
     .fc01{align-items: flex-start;}
     .fc03{text-align: right;}
 
+    .titu-m{width: 65%;align-self: flex-start;}
     .titu-m>h1{font-size: 4.5em;}
-    .titu-m>h2{font-size: 4em; transform: translate(25%,-25%);}
+    .titu-m>h2{font-size: 1.8em; transform: translate(5%,-25%);}
 
     .tnio{font-size: 4.5em;}
     .tnio2{font-size: 4em;}
@@ -337,9 +338,9 @@
     .sesion{order:4; width:20%;}
     nav{width: 65%;}
     .menu-main{justify-content: flex-start;}
-    .titu-m{transform: translateX(10%);}
-    .titu-m>h1{font-size: 7.5em;}
-    .titu-m>h2{font-size: 7em;}
+    .titu-m{transform: translateX(5%); width: 55%;}
+    .titu-m>h1{font-size: 5em;}
+    .titu-m>h2{font-size: 2em;}
 
     .tnio{font-size: 6.5em;}
     .tnio2{font-size: 5em;}
