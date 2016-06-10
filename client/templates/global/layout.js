@@ -44,20 +44,19 @@ Template.layout.onRendered(function(){
         }
 
     });
-    var sesion= true;
-    var registro= true;
+    var sesion= false;
+    var registro= false;
 
     $('.cierra-modal').click(function(){
         if(sesion){
-            $('.cont-sesion-a').addClass("cerrar");
-
+            $('.cont-sesion-a').addClass("cerrar3");
                 setTimeout(function(){
                     $('.cont-modal-sombra').addClass('cerrar');
-                },400);
+                },500);
             sesion= false;
         }
         if(registro){
-            $('.cont-modal').addClass("cerrar");
+            $('.cont-modal').addClass("cerrar2");
                 setTimeout(function(){
                     $('.cont-modal-sombra').addClass('cerrar');
                 },400);
@@ -67,23 +66,23 @@ Template.layout.onRendered(function(){
     $('.sesionB').click(function(){
         $('.cont-modal-sombra').removeClass("cerrar");
             setTimeout(function(){
-                $('.cont-sesion-a').removeClass('cerrar');
-            },400);
+                $('.cont-sesion-a').removeClass('cerrar3');
+            },500);
             sesion= true;
     })
     $('.registrarA').click(function(){
         $('.cont-modal-sombra').removeClass("cerrar");
             setTimeout(function(){
-                $('.cont-modal').removeClass('cerrar');
+                $('.cont-modal').removeClass('cerrar2');
             },400);
             registro= true;
     })
     $('.acceda').click(function(){
         setTimeout(function(){
-        $('.cont-modal').addClass('cerrar');
+        $('.cont-modal').addClass('cerrar2');
         registro=false;
-            $('.cont-sesion-a').removeClass('cerrar');
-        },400);
+            $('.cont-sesion-a').removeClass('cerrar3');
+        },600);
         sesion= true;
     });
 
