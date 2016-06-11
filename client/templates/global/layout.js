@@ -4,7 +4,17 @@ Template.layout.helpers({
       var componente;
       componente = $("centralArea");
       console.log(componente);
-
+      var routeName = Router.current().route.getName();
+      if(routeName!=='/'){
+          $('.cabecera-fija').addClass('mas-fino');
+          $('.logomf').removeClass('oculta-logo-fino');
+          $('.logoN').addClass('oculta-logo-normal');
+      }
+      if(routeName==='/'){
+          $('.cabecera-fija').removeClass('mas-fino');
+          $('.logomf').addClass('oculta-logo-fino');
+          $('.logoN').removeClass('oculta-logo-normal');
+      }
     }
 
 });
@@ -12,7 +22,9 @@ Template.layout.helpers({
 Template.layout.onRendered(function(){
     $(window).scroll(function(){
         if (window.location.pathname==="/") {
+            var vh= $(window).height();
             var vscroll= $(this).scrollTop();
+            var letras= $('.letras-ani').offset().top;
             if(vscroll>$(window).height()){
                 $('.cabecera-fija').addClass('mas-fino');
                 $('.logomf').removeClass('oculta-logo-fino');
@@ -21,29 +33,30 @@ Template.layout.onRendered(function(){
                 $('.cabecera-fija').removeClass('mas-fino');
                 $('.logomf').addClass('oculta-logo-fino');
                 $('.logoN').removeClass('oculta-logo-normal');
+
+            }
+            if(vscroll> letras-vh){
+                $('.letras-ani').removeClass('oculta-letras');
             }
         }
-
-    });
+    })
 
     $('.btn-activa-menu').click(function(){
         $('.menu-main').toggleClass('oc-menu');
     });
 
-    $(window).on('click', function(){
+    // if(window.location.pathname!=="/"){
+    //     $('.cabecera-fija').addClass('mas-fino');
+    //     $('.logomf').removeClass('oculta-logo-fino');
+    //      $('.logoN').addClass('oculta-logo-normal');
+    // }else{
+    //     $('.cabecera-fija').removeClass('mas-fino');
+    //     $('.logomf').addClass('oculta-logo-fino');
+    //     $('.logoN').removeClass('oculta-logo-normal');
+    //
+    // }
 
-        if(window.location.pathname!=="/"){
-            $('.cabecera-fija').addClass('mas-fino');
-            $('.logomf').removeClass('oculta-logo-fino');
-             $('.logoN').addClass('oculta-logo-normal');
-        }else{
-            $('.cabecera-fija').removeClass('mas-fino');
-            $('.logomf').addClass('oculta-logo-fino');
-            $('.logoN').removeClass('oculta-logo-normal');
 
-        }
-
-    });
     var sesion= false;
     var registro= false;
 
@@ -87,5 +100,6 @@ Template.layout.onRendered(function(){
     });
 
 
-    console.log("Esto se ejecuta tan pronto se muestra la plantilla");
+
 });
+console.log("Esto se ejecuta tan pronto se muestra la plantilla");

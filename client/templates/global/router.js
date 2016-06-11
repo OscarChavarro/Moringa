@@ -28,3 +28,5 @@
 
     Router.route("/carritoCompras", {name: "carritoCompras"});
     Router.route("/dondeComprar", {name: "dondeComprar"});
+
+    Router.route("/facturacion", {name: "facturacion"});
