@@ -69,11 +69,11 @@
 
     .txtc{text-align: center;}
     .txtr{text-align: right;}
-    .txtl{text-align: left;}
+    .txtl{text-align: justify;}
     .tnio{font-size: 2em;}
     .tnio2{font-size: 1.5em;}
     .bd{display: block;}
-
+    .txt2{text-align: justify; font-size: 0.8em;}
     .bord{border:1px solid transparent;}
 
     /*////// COLORES ///////////*/
@@ -232,6 +232,11 @@
     Estilos quienes Conocenos..................
     ==========================================*/
     .fot-con{background-attachment: fixed; background-image: url(../img/conocenos.jpg);height: 50vh;}
+
+    /*=========================================
+    Estilos articulos..................
+    ==========================================*/
+    .fot-art{background-attachment: fixed; background-image: url(../img/diabetes.jpg);height: 80vh;}
 
 
     /*=========================================
