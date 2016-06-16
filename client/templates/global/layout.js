@@ -98,6 +98,33 @@ Template.layout.onRendered(function(){
         },600);
         sesion= true;
     });
+    var typeA=false;
+    var typeB=false;
+    $('.r01').on('change',function(){
+        if(typeB){
+            $('.tipodecuenta-b').addClass('ocultar-tipodeC');
+            typeB= false;
+            $('.tipodecuenta-a').removeClass('ocultar-tipodeC');
+            typeA= true;
+        }else {
+            typeA=true;
+            $('.tipodecuenta-a').removeClass('ocultar-tipodeC');
+        }
+
+    })
+    $('.r03').on('change',function(){
+        if(typeA){
+            $('.tipodecuenta-a').addClass('ocultar-tipodeC');
+            typeA=false;
+            $('.tipodecuenta-b').removeClass('ocultar-tipodeC');
+            typeB=true;
+        }
+        else{
+            $('.tipodecuenta-b').removeClass('ocultar-tipodeC');
+            typeB=true;
+        }
+
+    })
 
 
 

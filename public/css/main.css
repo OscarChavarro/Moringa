@@ -84,7 +84,7 @@
     .bg4{background-color: #FFFFFF}
     .bg5{background-color: #385737;}
     .bg6{background-color: #151618;}
-    .bg7{background-color: rgba(27,86,48,.7);}/*-- verde oscuro on alpha --*/
+    .bg7{background-color: rgba(27,86,48,.8);}/*-- verde oscuro on alpha --*/
     .bg72{background-color: rgba(27,86,48,.9);}
     .bg8{background-color: rgba(138,122,37,.8);}
     .bgw{background-color: white;}
@@ -183,12 +183,15 @@
     .sec-05{background-image: url('../img/ale.jpg'); min-height: 100vh; background-attachment: fixed;position: relative;}
     .titu-sec-05{position: relative;top: 100px;}
     .linea-frascos{align-items: flex-end;width: 90%;margin: auto;position: absolute; bottom: 0; left: 5%;}
-    .fra{flex: 1;}
+    .sublinea{width: 90%; align-items: flex-end; justify-content: space-around;}
+    .sublinea02{position: absolute; bottom: 0; left: 29%;justify-content: space-between;width: 42%;}
+
 
     .sec-06{ background-position: left center; position: relative;background-image: url('../img/Mapa.svg'); min-height: 100vh;}
     .frasco-f{ height: 100%;width: 50%; max-width: 350px;position: absolute; bottom: 0; right: 20px;}
     .frasco-f>img{ height: 60%; position: absolute; bottom: 0; right: 10%; width: auto;}
-
+    .fra{width: 20%;}
+    .fra1,.fra5{width:30%;}
     .parra01,.parra02{width: 100%;}
 
     /*======Estilos del footer===============*/
@@ -277,6 +280,47 @@
     .mas-fino{background-color:#877a34; }
     .oculta-logo-fino{transform: translateX(-150%); height: 0;}
     .oculta-logo-normal{display: none;}
+
+    /*=========================================
+    Estilos Facturación ..................
+    ==========================================*/
+    .entrada {align-items: flex-start;}
+    .entrada label{font-size: .9em;}
+    .entrada input,textarea{cursor: pointer; resize: none;padding: 10px; border: 1px solid #d1d1d1;background-color: rgba(255, 255,255, 0.5);}
+    .entrada input:focus{;background-color: rgba(255, 255,255, 1);}
+    .entrada input:hover{;background-color: rgba(255, 255,255, 1);}
+    .entrada textarea:hover{;background-color: rgba(255, 255,255, 1);}
+    .w5{width: 50%;}
+    .w7{width: 70%;}
+    .w3{width: 30%;}
+    .w10{width: 100%;}
+
+    .linea-t01,.linea-t02{width: 100%; justify-content: flex-start;}
+    .num-tar{max-width: 300px;align-items: flex-start;}
+    .fecha-tar>select{height:40px;margin-right: 5px;}
+
+    .algfs{align-items: flex-start;}
+    .nombre-tar{width: 300px;}
+    .numero-de-trans{max-width: 300px;}
+
+    .tipodecuenta-a,.tipodecuenta-b{dvisibility: visible;display: block;transform: scale(1);opacity:1;transition: all 500ms cubic-bezier(0.645, 0.045, 0.355, 1.000);}
+    .ocultar-tipodeC{ display: none;opacity: 0; transform: scale(.6);}
+    .fact-producto{width: 70%;text-align:left;}
+    .fact-precio{width: 30%;text-align:left;}
+    .linea-pedido{border-bottom: 3px dotted #336633;}
+    .producto-pedido{width: 70%; text-align: left; padding: 10px;}
+    .total-pro-pedido{width: 30%; text-align: left; padding: 10px;}
+    .fact-boton{margin-top: 5px;}
+
+    /*=========================================
+    Estilos Facturación ..................
+    ==========================================*/
+    .presen-b,.co-b{width: 30%; }
+    .pro-b{width: 40%; }
+    .linea-cod-barra{align-items: stretch; border-bottom: 1px dotted #877a34;color: #336633;}
+    .presentacion-barra{width: 30%}
+    .producto-barra{width: 40%; border: 1px solid #877a34; border-top: none; border-bottom: none;}
+    .barra{width: 30%;}
     /* ==========================================================================
        Author's custom styles
        ========================================================================== */
@@ -308,7 +352,7 @@
     .titu-m>h2{font-size: 1.1em; line-height: 1.1em;}
 
     .tnio{font-size: 2.5em;}
-    .tnio2{font-size: 2em;}
+    .tnio2{font-size: 2em; line-height: 1em;}
 
 }
     @media only screen and (min-width: 768px) {
@@ -352,6 +396,9 @@
 
     .parra01,.parra02{width: 50%;}
 
+    .formulario-fact{width: 50%;padding: 15px;}
+    .formulario-fact textarea{height: 100px; width: 100%;}
+    .indicaciones{width: 50%;}
     }
 
     @media only screen and (min-width: 1140px) {
