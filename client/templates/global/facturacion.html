@@ -2,7 +2,6 @@
   <div class="contenedor-g">
     <div class="mw">
       <h1>Facturación</h1>
-
       <div class="p10 entrada   f01">
         <div class="formulario-fact">
           <form action="" class="f01">
@@ -44,7 +43,6 @@
                 <textarea name="name" rows="8" cols="40"></textarea>
               </div>
             </div>
-
           </form>
         </div>
         <div class="indicaciones">
@@ -57,6 +55,8 @@
             ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
             fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
             mollit anim id est laborum.</p>
+            <br>
+            <br>
         </div>
         <div class=" w10" >
           <div class="f01 sub-titu-linea">
@@ -64,7 +64,7 @@
             <hr class="raya bord">
           </div>
         </div>
-        <div class=" w100 txtl">
+        <div class=" w100 txtl mb15" >
           <p class="txtl txtl" >En esta modalidad puede usted usar un método de pago en línea mediante el istema seguro PSE </p>
           <br>
             <!-- seleccion del metodo de pago -->
@@ -73,22 +73,20 @@
           </strong>
           <div class="f01" style="justify-content: flex-start;">
             <div class="f01 p10">
-              <input class="p10" type="radio" name="name" value="" ><p>Tarjeta de crédito</p>
+              <input  type="radio" name="name" value="" class="p10 r01"><p>Tarjeta de crédito</p>
             </div>
             <div class="f01 p10">
-              <input type="radio" name="name" value="" class="p10"><p>Tarjeta de débito</p>
-            </div>
-            <div class="f01 p10">
-              <input type="radio" name="name" value="" class="p10"><p>Consignación bancaria</p>
+              <input type="radio" name="name" value="" class="p10 r03"><p>Consignación bancaria</p>
             </div>
           </div>
           <!-- si es por tarjeta de crédito -->
-          <div class="campos p10 entrada  ">
-              <div class="p10 entrada  w10">
+          <div class="campos p10 entrada  bg2 tipodecuenta-a ocultar-tipodeC">
+            <div class="linea-t01 f01">
+              <div class="p10 num-tar w5 f02 ">
                 <label for="">Número de tarjeta de crédito</label>
-                <input type="number">
+                <input type="number" class="w10">
               </div>
-              <div class="p10 entrada  f01 w10 " style="justify-content:flex-start;">
+              <div class="p10 fecha-tar f01 w5  " style="justify-content:flex-start;">
                 <label for="" class="w10 txtl">fecha de vencimiento</label>
                 <select class="p5" name="">
                   <option value="MEs">Mes</option>
@@ -97,14 +95,65 @@
                   <option value="año">Año</option>
                 </select>
               </div>
-              <div class="p10 entrada  w10">
+            </div>
+
+              <div class="p10 entrada  w10 f02">
                 <label for="">últimos tres números del dorso</label>
                 <input type="number" class="w3">
               </div>
-              <div class="p10 entrada  w10">
-                <label for="">Nombre y apellido del titular</label>
-                <input type="text" class="w3"><input type="text" class="w3">
+              <div class="linea-t02 f01 ">
+                <div class="p10 nombre-tar f02 algfs">
+                  <label for="">Nombre del titular</label>
+                  <input type="text" class="w10">
+                </div>
+                <div class="apellido-tar f02 algfs">
+                  <label for="">Apellido del titular</label>
+                  <input type="text" class="w10">
+                </div>
               </div>
+
+              <div class="p10 entrada  w10">
+                <label for="">Documento</label>
+                <select class="" name="">
+                  <option value=" cc">C.C</option>
+                </select>
+                <select class="" name="">
+                  <option value=" cc">C</option>
+                </select>
+                <input type="text">
+              </div>
+          </div>
+          <!-- si es por sonsignación bancaria -->
+          <div class="campos p10 entrada  bg2 tipodecuenta-b ocultar-tipodeC">
+            <div class="linea-t01 f01">
+              <div class="p10 num-tar w5 f02 ">
+                <label for="">Nombre del banco</label>
+                <input type="text" class="w10">
+              </div>
+              <div class="p10 fecha-tar f01 w5  " style="justify-content:flex-start;">
+                <label for="" class="w10 txtl">Tipo de Cuenta</label>
+                <select class="p5" name="">
+                  <option value="MEs">Corriente</option>
+                  <option value="MEs">Ahorro</option>
+                </select>
+              </div>
+            </div>
+
+              <div class="p10 numero-de-trans  w10 f02 algfs">
+                <label for="">Número de transacción</label>
+                <input type="number" class="w10">
+              </div>
+              <div class="linea-t02 f01">
+                <div class="p10 nombre-tar f02 algfs">
+                  <label for="">Nombre del titular</label>
+                  <input type="text" class="w10">
+                </div>
+                <div class="apellido-tar f02 algfs">
+                  <label for="">Apellido del titular</label>
+                  <input type="text" class="w10">
+                </div>
+              </div>
+
               <div class="p10 entrada  w10">
                 <label for="">Documento</label>
                 <select class="" name="">
@@ -117,21 +166,29 @@
               </div>
           </div>
         </div>
+        <br>
+        <br>
+        <div class="f01 sub-titu-linea w10" >
+
+          <h3 class="sinm sinp txtl c5" style="flex:0 0 100px;">Pedido</h3>
+          <hr class="raya bord">
+        </div>
+        <div class="w100">
+          <div class="p10 f01 bg tabla-pedido">
+            <div class="fact-producto"><p class="cb">Producto</p></div><div class="fact-precio"><p class="cb">Total</p></div>
+          </div>
+          <div class="linea-pedido f01">
+            <div class="producto-pedido">   <p>Este es un producto</p></div>
+            <div class="total-pro-pedido"> <p>Este es su precio</p></div>
+          </div>
+          <div class="fact-boton txtr">
+            <button type="button" name="button" class="btn p10">Continuar</button>
+          </div>
+          <br>
+          <br>
+          <br>
+        </div>
       </div>
     </div>
   </div>
-  <style media="screen">
-
-    .entrada {align-items: flex-start;}
-    .entrada label{font-size: .9em;}
-    .entrada input,textarea{cursor: pointer; resize: none;padding: 10px; border: 1px solid #d1d1d1;background-color: rgba(255, 255,255, 0.5);}
-    .entrada input:focus{;background-color: rgba(255, 255,255, 1);}
-    .entrada input:hover{;background-color: rgba(255, 255,255, 1);}
-    .entrada textarea:hover{;background-color: rgba(255, 255,255, 1);}
-    .w5{width: 50%;}
-    .w7{width: 70%;}
-    .w3{width: 30%;}
-    .w10{width: 100%;}
-
-  </style>
 </template>
