@@ -1,6 +1,7 @@
 <template name="facturacion">
   <div class="contenedor-g">
     <div class="mw">
+      <br><br>
       <h1>Facturación</h1>
       <div class="p10 entrada   f01">
         <div class="formulario-fact">
@@ -39,7 +40,7 @@
                 <input class="w10" type="text" name="nombre">
               </div>
               <div class="entrada f02 p5 w10">
-                <label for="">Nombre</label>
+                <label for="">Comentario (opcional)</label>
                 <textarea name="name" rows="8" cols="40"></textarea>
               </div>
             </div>
@@ -47,20 +48,23 @@
         </div>
         <div class="indicaciones">
           <div class="f01 sub-titu-linea">
-            <h3 class="sinm sinp txtl c5" style="flex:0 0 150px;">Instrucciones</h3>
+            <h3 class="sinm sinp txtl ttx c5" style="flex:0 0 150px;">Instrucciones</h3>
             <hr class="raya bord">
           </div>
-          <p class="txtl">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-            mollit anim id est laborum.</p>
+          <br>
+          <p class="txtl">
+            1-	Llene los campos con la información de factura y envío.<br>
+            2-	Elija el modo de pago en el que desea cancelar su pedido.<br>
+            3-	Complete los campos requeridos para la consignación del pago.<br>
+            4-	Verifique sus datos y el pedido.<br>
+            5-	Presione “continuar”.<br>
+          </p>
             <br>
             <br>
         </div>
         <div class=" w10" >
           <div class="f01 sub-titu-linea">
-            <h3 class="sinm sinp txtl c5" style="flex:0 0 60px;">Pago</h3>
+            <h3 class="sinm sinp txtl ttx c5" style="flex:0 0 60px;">Pago</h3>
             <hr class="raya bord">
           </div>
         </div>
@@ -116,9 +120,11 @@
                 <label for="">Documento</label>
                 <select class="" name="">
                   <option value=" cc">C.C</option>
+                  <option value=" cc">N.I.T</option>
                 </select>
                 <select class="" name="">
                   <option value=" cc">C</option>
+                  <option value=" cc">E</option>
                 </select>
                 <input type="text">
               </div>
@@ -158,9 +164,11 @@
                 <label for="">Documento</label>
                 <select class="" name="">
                   <option value=" cc">C.C</option>
+                  <option value=" cc">N.I.T</option>
                 </select>
                 <select class="" name="">
                   <option value=" cc">C</option>
+                  <option value=" cc">E</option>
                 </select>
                 <input type="text">
               </div>
@@ -170,11 +178,11 @@
         <br>
         <div class="f01 sub-titu-linea w10" >
 
-          <h3 class="sinm sinp txtl c5" style="flex:0 0 100px;">Pedido</h3>
+          <h3 class="sinm sinp txtl ttx c5" style="flex:0 0 100px;">Pedido</h3>
           <hr class="raya bord">
         </div>
         <div class="w100">
-          <div class="p10 f01 bg tabla-pedido">
+          <div class="p10 f01 bg1 tabla-pedido">
             <div class="fact-producto"><p class="cb">Producto</p></div><div class="fact-precio"><p class="cb">Total</p></div>
           </div>
           <div class="linea-pedido f01">

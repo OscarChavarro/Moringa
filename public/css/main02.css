@@ -67,6 +67,7 @@
     .mh100{min-height: 100%;}
     .mvh6{min-height: 60vh}
 
+    .ttx {font-family: georgia;}
     .txtc{text-align: center;}
     .txtr{text-align: right;}
     .txtl{text-align: justify;}
@@ -91,8 +92,8 @@
 
     .fondo-tema{background-image: url('../img/hojitas.svg'); background-position: top center; background-size: 100% auto;}
 
-    .contenedor-g{ text-align:  center;margin-top:50px;background-color: #F9F4D0; min-height: 60vh;background-repeat: no-repeat;background-image: url('../img/hojitas.svg'); background-position: top center; background-size: 100% auto;}
-    .contenedor-g h1{ color: rgba(27,86,48,1);; font-size: 3.5em;}
+    .contenedor-g{ text-align:  center;margin-top:50px;background-color: #F8EFB7; min-height: 60vh;background-repeat: no-repeat;background-image: url('../img/hojafon.svg');background-position: top center; background-size: 100% auto;}
+    .contenedor-g h1{font-family: georgia; color:#695E1A;; font-size: 1.5em;}
 
 
 
@@ -101,7 +102,7 @@
     .c3{color: #999;}
     .c4 {color:#877a34;}
     .cb{color: white;}
-    .c5{color: rgba(27,86,48,1);}
+    .c5{color:#695E1A;}
     .c6{color:#E7E0B4; }
 
     .btn{background-color: #E7E0B4; color:#8A7A27;transition: all 500ms cubic-bezier(0.215, 0.610, 0.355, 1.000); transform:scale(1);}
@@ -203,7 +204,7 @@
     .footer{justify-content: center; border-top: 50px solid #877a34;background-color: #cec383;}
     .footer-c{width: 100%;}
     .fc01 img{max-width: 300px}
-    .fc03{text-align: center}
+    .fc03{text-align: center;}
     .ctd{width: 100px;}
     .redes-sociales{padding: 10px; margin: 0 5px;width: 45px; line-height: 0; height: 45px; border-radius: 50%; background-color: #877a34; color:#cec383;}
     .redes-sociales i{font-size: 2em;  display: block;}
@@ -219,7 +220,7 @@
     .milista{align-items: flex-start;}
     .milista>li{text-align: left;}
     .sub-titu-linea>h3{ flex: 1 1 120px; display: block; width: 40%;}
-    .raya{border-color:#336633; flex:5 1 50px; height: 0;}
+    .raya{border-color:#695E1A; flex:5 1 50px; height: 0;}
     .otros-p{overflow: hidden;border:1px solid #999; width: 80%;position: relative; }
     .foto-otro-p{ width:50%;}
     .detalles-otro-p{position: absolute; bottom:-55px; left: 0;}
@@ -240,7 +241,6 @@
     .fot-obesi{background-attachment: fixed; background-image: url(../img/obesi.jpg);height: 80vh;}
     .fot-diabe{background-attachment: fixed; background-image: url(../img/diabe.jpg);height: 80vh;}
     .fot-mori{background-attachment: fixed; background-image: url(../img/mori.jpg);height: 80vh;}
-
     /*=========================================
     Estilos Registro ..................
     ==========================================*/
@@ -279,8 +279,8 @@
     .items{width: 100%;}
     .producto-item{width: 40%; justify-content: flex-start; }
     .precio-item,.producto-cantidad,.producto-total{width: 20%;}
-    .pie-tabla {width: 100%; justify-content: flex-end; border-top:1px solid  #042304;}
-    .btn-act-ca{background-color: #336633; } .btn-act-ca:hover{background-color: #042304;}
+    .pie-tabla {width: 100%; justify-content: flex-end; border-top:1px solid  #8A7A27;}
+    .btn-act-ca{background-color: #8A7A27; } .btn-act-ca:hover{background-color: #8A7A27;}
     .tabla-peque{ max-width: 400px;}
 
     .mp{font-weight: 300; font-size: .8;}
@@ -325,7 +325,7 @@
     ==========================================*/
     .presen-b,.co-b{width: 30%; }
     .pro-b{width: 40%; }
-    .linea-cod-barra{align-items: stretch; border-bottom: 1px dotted #877a34;color: #336633;}
+    .linea-cod-barra{align-items: stretch; border-bottom: 1px dotted #877a34;color: #000;}
     .presentacion-barra{width: 30%}
     .producto-barra{width: 40%; border: 1px solid #877a34; border-top: none; border-bottom: none;}
     .barra{width: 30%;}
